@@ -1,0 +1,95 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f7fc; /* Light background for better contrast */
+    color: #333; /* Dark text for readability */
+    line-height: 1.6;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 20px;
+    padding: 20px; /* Slightly increased padding */
+    border: 1px solid #ccc; /* Softer border */
+    border-radius: 10px; /* More rounded corners */
+    background-color: #ffffff; /* White background for better focus */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Section Headers */
+.section h3 {
+    margin-bottom: 15px;
+    color: #0056b3; /* Blue for section titles */
+    font-size: 20px; /* Slightly larger font */
+    text-transform: uppercase; /* Uppercase for emphasis */
+}
+
+/* Input Fields */
+input {
+    margin: 10px 0; /* More space between inputs */
+    padding: 10px;
+    width: calc(100% - 22px); /* Adjust for border-box sizing */
+    border: 1px solid #ccc; /* Softer border */
+    border-radius: 5px; /* Rounded corners for inputs */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+}
+
+/* Focused Input Fields */
+input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Glow effect on focus */
+}
+
+/* Buttons */
+button {
+    padding: 12px 20px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Button Active State */
+button:active {
+    transform: translateY(0); /* Reset lift on click */
+    background-color: #004085; /* Even darker blue */
+}
+
+/* Output Box */
+.output {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #e9ecef; /* Light grey for contrast */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}

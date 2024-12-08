@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface Gestionnaire de Risque</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.8.2/web3.min.js"></script>
+</head>
+<body>
+    <h1>Interface Web - Gestionnaire de Risque</h1>
+
+    <!-- Ajouter une Contrepartie -->
+    <div class="section">
+        <h3>Ajouter une Contrepartie</h3>
+        <input id="portefeuille" type="text" placeholder="Adresse de Portefeuille">
+        <input id="scoreCredit" type="number" placeholder="Score Crédit">
+        <input id="limiteExposition" type="number" placeholder="Limite d'Exposition">
+        <input id="collateral" type="number" placeholder="Collatéral">
+        <button id="ajouterContrepartie">Ajouter Contrepartie</button>
+        <div id="output-ajouter" class="output"></div>
+    </div>
+
+    <!-- Mettre à Jour une Exposition -->
+    <div class="section">
+        <h3>Mettre à Jour une Exposition</h3>
+        <input id="contrepartie-exposition" type="text" placeholder="Adresse de Contrepartie">
+        <input id="nouvelleExposition" type="number" placeholder="Nouvelle Exposition">
+        <button id="mettreAJourExposition">Mettre à Jour</button>
+        <div id="output-exposition" class="output"></div>
+    </div>
+
+    <!-- Ajouter des Positions -->
+    <div class="section">
+        <h3>Ajouter des Positions</h3>
+        <input id="contrepartie-position" type="text" placeholder="Adresse de Contrepartie">
+        <input id="positionLongue" type="number" placeholder="Position Longue">
+        <input id="positionCourte" type="number" placeholder="Position Courte">
+        <button id="ajouterPosition">Ajouter Positions</button>
+        <div id="output-position" class="output"></div>
+    </div>
+
+    <!-- Calculer les Indicateurs -->
+    <div class="section">
+        <h3>Calculer les Indicateurs</h3>
+        <input id="contrepartie-indicateur" type="text" placeholder="Adresse de Contrepartie">
+        <button id="calculerIndicateurs">Calculer</button>
+        <div id="output-indicateurs" class="output"></div>
+    </div>
+
+    <!-- Calculer le Collatéral Requis -->
+<div class="section">
+    <h3>Calculer le Collatéral Requis</h3>
+    <input id="contrepartie-collateral" type="text" placeholder="Adresse de Contrepartie">
+    <button id="calculerCollateral">Calculer Collatéral</button>
+    <div id="output-collateral" class="output"></div>
+</div>
+
+<!-- Vérifier le Collatéral Suffisant -->
+<div class="section">
+    <h3>Vérifier le Collatéral Suffisant</h3>
+    <input id="contrepartie-verification" type="text" placeholder="Adresse de Contrepartie">
+    <button id="verifierCollateral">Vérifier Collatéral</button>
+    <div id="output-verification" class="output"></div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
